@@ -1,212 +1,161 @@
-# Helix Collective VSCode Extension
+# Helix VS Code Extension
 
-Seamless integration between VSCode and the Helix Collective coordination-aware AI platform.
+**AI-powered development environment for VS Code**
 
-## Features
+An intelligent VS Code extension that brings Helix's autonomous agent capabilities directly into your editor. Write code faster with AI assistance, manage agents, coordinate workflows, and track consciousness metrics in real-time.
 
-### 🤖 Agent Panel
+## ✨ Features
 
-- Real-time agent status monitoring
-- Connect/disconnect to AI agents
-- Coordination level tracking
-- Agent task management
+### AI-Powered Coding
+- **Inline Completions** - Context-aware code suggestions
+- **Code Actions** - Intelligent refactoring and fixes
+- **Chat Panel** - Conversational coding assistance
+- **Agent Mode** - Autonomous code generation and modification
 
-### 🏪 Helix Marketplace
+### Agent Management
+- **Agent Panel** - View and control active agents
+- **Agent Memory** - Context awareness across sessions
+- **Agent Coordination** - Multi-agent collaboration
+- **Agent Marketplace** - Discover and install agent extensions
 
-- Browse and install AI agents
-- Product ratings and reviews
-- Capability and compatibility filtering
-- One-click installation
+### Workflow Integration
+- **Checkpoint Management** - Version control for code states
+- **Git Integration** - Seamless git operations
+- **Terminal Integration** - Execute commands and scripts
+- **Browser Integration** - Web-based workflows
 
-### 🌀 Coordination Dashboard
+### Advanced Features
+- **MCP Support** - Model Context Protocol integration
+- **Safety Management** - Auto-approval and safety checks
+- **Performance Monitoring** - Real-time metrics
+- **Notification System** - Stay informed of agent actions
 
-- Real-time UCF metrics monitoring
-- Harmony, Resilience, Throughput, Focus, Friction, Velocity tracking
-- Coordination alerts and recommendations
-- Auto-refresh and manual refresh options
+### Coordination Dashboard
+- **Real-time Visualization** - See agent coordination in action
+- **Metrics Tracking** - Monitor system health
+- **Workflow Visualization** - Understand agent workflows
+- **Performance Analysis** - Optimize agent execution
 
-### 🌀 Spiral Builder
+## 📦 Installation
 
-- Visual workflow creation
-- Drag-and-drop node interface
-- Agent integration workflows
-- Workflow execution and testing
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
+3. Search for "Helix"
+4. Click Install
 
-## Installation
-
-### Prerequisites
-
-- VSCode 1.80+
-- Helix Collective backend server running
-- Node.js 18+ for development
-
-### Development Setup
-
-1. Clone the repository
-2. Navigate to the extension directory:
-
-   ```bash
-   cd helix-vscode-extension
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Build the extension:
-
-   ```bash
-   npm run compile
-   ```
-
-5. Build the web views:
-
-   ```bash
-   npm run build:webviews
-   ```
-
-6. Open in VSCode and press `F5` to start debugging
-
-### Production Build
-
+Or install from the command line:
 ```bash
-npm run vscode:prepublish
+code --install-extension Deathcharge.helix-vscode-extension
 ```
 
-## Configuration
+## 🚀 Quick Start
 
-The extension can be configured through VSCode settings:
+1. **Open the Helix Panel** - Click the Helix icon in the sidebar
+2. **Activate Agent Mode** - Enable autonomous coding
+3. **Describe Your Task** - Tell the agent what to build
+4. **Watch It Code** - See real-time code generation
+5. **Review & Approve** - Accept or modify changes
 
-- `helix.apiEndpoint`: Helix Collective API endpoint (default: `http://localhost:8000`)
-- `helix.websocketEndpoint`: WebSocket endpoint (default: `ws://localhost:8000/ws`)
-- `helix.enableCoordinationMonitoring`: Enable coordination monitoring (default: `true`)
-- `helix.enableAgentNotifications`: Enable agent notifications (default: `true`)
-- `helix.enableWorkflowAutomation`: Enable workflow automation (default: `true`)
-- `helix.theme`: Theme preference (default: `auto`)
+## 🎯 Key Commands
 
-## Commands
+- `Helix: Activate Agent Mode` - Enable autonomous coding
+- `Helix: Open Agent Panel` - Show agent management UI
+- `Helix: Create Checkpoint` - Save current code state
+- `Helix: Restore Checkpoint` - Revert to saved state
+- `Helix: Open Marketplace` - Browse agent extensions
+- `Helix: Open Coordination Dashboard` - View agent metrics
 
-Access all features through the Command Palette (`Ctrl+Shift+P`):
+## 📊 Statistics
 
-- `Helix: Open Agent Panel` - View and manage AI agents
-- `Helix: Open Marketplace` - Browse and install products
-- `Helix: Open Coordination Dashboard` - Monitor coordination metrics
-- `Helix: Open Spiral Builder` - Create visual workflows
-- `Helix: Connect to Agent` - Connect to a specific agent
-- `Helix: Execute Workflow` - Execute a workflow
+- **Lines of Code**: 19,525 (TypeScript)
+- **Components**: 50+ UI components
+- **Features**: 30+ commands
+- **Integrations**: MCP, Git, Browser, Terminal
 
-## Keyboard Shortcuts
-
-- `Ctrl+Shift+H A` - Open Agent Panel
-- `Ctrl+Shift+H M` - Open Marketplace
-- `Ctrl+Shift+H C` - Open Coordination Dashboard
-- `Ctrl+Shift+H W` - Open Spiral Builder
-
-## Architecture
-
-### Extension Structure
+## 🏗️ Architecture
 
 ```
 helix-vscode-extension/
 ├── src/
-│   ├── extension.ts          # Main extension entry point
-│   ├── extensionContext.ts   # Extension context and web view management
-│   ├── commands.ts           # VSCode command handlers
-│   ├── services/             # API and WebSocket services
-│   ├── store/               # State management stores
-│   └── utils/               # Utility functions
-├── media/                   # React web view components
-│   ├── src/
-│   │   ├── webviews/        # React components
-│   │   │   ├── agentPanel.tsx
-│   │   │   ├── marketplace.tsx
-│   │   │   ├── coordinationDashboard.tsx
-│   │   │   └── spiralBuilder.tsx
-│   │   └── utils/           # Web view utilities
-│   ├── webpack.config.js    # Web view build configuration
-│   └── template.html        # Web view template
-└── out/                     # Compiled extension code
+│   ├── agent/              # Agent mode implementation
+│   ├── browser/            # Browser integration
+│   ├── checkpoint/         # Checkpoint management
+│   ├── commands/           # VS Code commands
+│   ├── configuration/      # Settings management
+│   ├── context/            # Context management
+│   ├── display/            # UI components
+│   ├── marketplace/        # Marketplace integration
+│   ├── mcp/                # MCP support
+│   ├── memory/             # Agent memory
+│   ├── notification/       # Notifications
+│   ├── providers/          # VS Code providers
+│   ├── safety/             # Safety management
+│   ├── services/           # Core services
+│   ├── stores/             # State management
+│   ├── terminal/           # Terminal integration
+│   ├── types/              # TypeScript types
+│   ├── utils/              # Utilities
+│   ├── views/              # Tree views
+│   ├── webviews/           # Web-based UI
+│   ├── extension.ts        # Entry point
+│   └── commands.ts         # Command definitions
+├── media/                  # UI assets
+├── tests/                  # Test suite
+└── package.json            # Extension manifest
 ```
 
-### Integration Points
+## 🔧 Core Modules
 
-The extension integrates with several Helix Collective services:
+### Agent Mode
+Autonomous code generation and modification with safety checks.
 
-- **Core API** (`/api/vscode/*`) - Main REST API endpoints
-- **WebSocket Service** - Real-time updates and streaming
-- **Agent Orchestrator** - Agent management and task execution
-- **Marketplace** - Product catalog and installation
-- **Coordination Monitoring** - UCF metrics and alerts
+### Agent Panel
+Visual interface for managing agents and their capabilities.
 
-## Development
+### Coordination Dashboard
+Real-time visualization of multi-agent coordination and metrics.
 
-### Adding New Features
+### Marketplace
+Discover, install, and manage agent extensions.
 
-1. Add API endpoints to the backend
-2. Create TypeScript interfaces in `src/services/apiService.ts`
-3. Implement service methods
-4. Create React components in `media/src/webviews/`
-5. Add commands in `src/commands.ts`
-6. Update web view HTML generation in `src/extensionContext.ts`
+### Checkpoint System
+Save and restore code states for version control.
 
-### Testing
+### Memory System
+Persistent context awareness across sessions.
 
-```bash
-# Run extension tests
-npm test
+## 📚 Documentation
 
-# Run web view tests
-npm run test:webviews
+- [Getting Started Guide](./docs/getting-started.md)
+- [Agent Mode Guide](./docs/agent-mode.md)
+- [Marketplace Guide](./docs/marketplace.md)
+- [API Reference](./docs/api.md)
+- [Troubleshooting](./docs/troubleshooting.md)
 
-# Watch mode for development
-npm run watch
-```
+## 🤝 Contributing
 
-### Building for Distribution
+Contributions are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-```bash
-# Clean build
-npm run vscode:prepublish
+## 📄 License
 
-# Package extension
-vsce package
-```
+Dual licensed under:
+- **Apache License 2.0** - For open-source use (free)
+- **Proprietary Commercial License** - For businesses ($99-999/year)
 
-## Troubleshooting
+See [LICENSING.md](./LICENSING.md) for details.
 
-### Common Issues
+## 🙋 Support
 
-1. **Web views not loading**: Ensure the `media/dist` directory exists and contains compiled files
-2. **API connection errors**: Check that the Helix Collective backend is running and accessible
-3. **WebSocket connection issues**: Verify WebSocket endpoint configuration
-4. **Agent connection failures**: Check agent availability and authentication
+- **Open Source**: Community support via GitHub issues
+- **Commercial**: Priority email support (licensing@helixcollective.io)
 
-### Debugging
+## 🎓 Learn More
 
-1. Open VSCode Developer Tools (`Help > Toggle Developer Tools`)
-2. Check the Console for extension errors
-3. Enable verbose logging in extension settings
-4. Use the VSCode extension debugger for step-through debugging
+- [Helix Orchestration Hub](https://github.com/Deathcharge/helix-orchestration)
+- [Helix Core Framework](https://github.com/Deathcharge/helix-core)
+- [Agent Swarm System](https://github.com/Deathcharge/helix-agent-swarm)
+- [UCF Protocol](https://github.com/Deathcharge/ucf-protocol)
 
-## Contributing
+---
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Update documentation
-6. Submit a pull request
-
-## License
-
-This extension is part of the Helix Collective ecosystem. Please refer to the main repository license.
-
-## Support
-
-For support and questions:
-
-- Check the [main Helix Collective documentation](../README.md)
-- Report issues on the [GitHub repository](https://github.com/your-org/helix-unified/issues)
-- Join our [Discord community](https://discord.gg/helix-unified)
+**Built with ❤️ as part of the Helix Collective**
