@@ -3,12 +3,17 @@
   "displayName": "Helix",
   "description": "Multi-agent AI coordination platform for VS Code - Connect with Kael, Lumina, Vega, and more agents for intelligent code assistance, inline completions, and chat",
   "version": "1.0.0",
-  "publisher": "helix-collective",
+  "publisher": "samsara-helix",
   "icon": "icon.png",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/helix-collective/helix-unified/issues"
+    "url": "https://github.com/Deathcharge/helix-vscode-extension/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deathcharge/helix-vscode-extension.git"
+  },
+  "homepage": "https://github.com/Deathcharge/helix-vscode-extension#readme",
   "engines": {
     "vscode": "^1.85.0"
   },

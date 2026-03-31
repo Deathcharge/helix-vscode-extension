@@ -2,7 +2,7 @@
 
 **AI-powered development environment for VS Code**
 
-An intelligent VS Code extension that brings Helix's autonomous agent capabilities directly into your editor. Write code faster with AI assistance, manage agents, coordinate workflows, and track consciousness metrics in real-time.
+An intelligent VS Code extension that brings Samsara Helix's autonomous agent capabilities directly into your editor. Write code faster with AI assistance, manage agents, coordinate workflows, and track consciousness metrics in real-time.
 
 ## ✨ Features
 
@@ -45,7 +45,7 @@ An intelligent VS Code extension that brings Helix's autonomous agent capabiliti
 
 Or install from the command line:
 ```bash
-code --install-extension Deathcharge.helix-vscode-extension
+code --install-extension samsara-helix.helix-vscode-extension
 ```
 
 ## 🚀 Quick Start
@@ -138,24 +138,25 @@ Contributions are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelin
 
 ## 📄 License
 
-Dual licensed under:
-- **Apache License 2.0** - For open-source use (free)
-- **Proprietary Commercial License** - For businesses ($99-999/year)
-
-See [LICENSING.md](./LICENSING.md) for details.
+This project is licensed under the Apache License 2.0 - see [LICENSE](./LICENSE) for details.
 
 ## 🙋 Support
 
-- **Open Source**: Community support via GitHub issues
-- **Commercial**: Priority email support (licensing@helixcollective.io)
+- **Issues**: Report bugs on [GitHub Issues](https://github.com/Deathcharge/helix-vscode-extension/issues)
+- **Discussions**: Join conversations on [GitHub Discussions](https://github.com/Deathcharge/helix-vscode-extension/discussions)
+- **Documentation**: Check the [docs](./docs) directory
 
 ## 🎓 Learn More
 
-- [Helix Orchestration Hub](https://github.com/Deathcharge/helix-orchestration)
-- [Helix Core Framework](https://github.com/Deathcharge/helix-core)
-- [Agent Swarm System](https://github.com/Deathcharge/helix-agent-swarm)
-- [UCF Protocol](https://github.com/Deathcharge/ucf-protocol)
+- [Samsara Helix Orchestration](https://github.com/Deathcharge/helix-orchestration)
+- [Helix Narrative Engine](https://github.com/Deathcharge/helix-narrative-engine)
+- [Helix Spirals](https://github.com/Deathcharge/helix-spirals)
+- [Helix Ethics](https://github.com/Deathcharge/helix-ethics)
 
 ---
 
-**Built with ❤️ as part of the Helix Collective**
+**Built with ❤️ as part of the Samsara Helix Ecosystem**
+
+**Publisher**: Samsara Helix  
+**Repository**: https://github.com/Deathcharge/helix-vscode-extension  
+**License**: Apache 2.0
