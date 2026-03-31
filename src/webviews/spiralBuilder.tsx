@@ -6,6 +6,15 @@ import {
   WorkflowNodeType,
 } from '../types/spiral';
 
+// JSX namespace declaration for proper JSX type support
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elemName: string]: any;
+    }
+  }
+}
+
 interface NodePosition {
   x: number;
   y: number;

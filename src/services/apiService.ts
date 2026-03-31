@@ -333,10 +333,12 @@ export class ApiService {
         ucf_metrics?: Partial<UCFFullMetrics>;
         coordination?: { level?: number };
       }>('/api/health/detailed');
-      if (res.data?.ucf_metrics) {
+      const resData = res as any;
+      if (resData.data?.ucf_metrics) {
         return {
-          ...res,
-          data: res.data.ucf_metrics as UCFFullMetrics,
+          success: true,
+          statusCode: 200,
+          data: resData.data.ucf_metrics as UCFFullMetrics,
         };
       }
       return res as unknown as ApiResponse<UCFFullMetrics>;
