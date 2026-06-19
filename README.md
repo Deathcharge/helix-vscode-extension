@@ -1,162 +1,93 @@
-# Helix VS Code Extension
+# helix-vscode-extension
 
-**AI-powered development environment for VS Code**
+VS Code extension for Helix development
 
-An intelligent VS Code extension that brings Samsara Helix's autonomous agent capabilities directly into your editor. Write code faster with AI assistance, manage agents, coordinate workflows, and track consciousness metrics in real-time.
+## 🎯 Overview
 
-## ✨ Features
-
-### AI-Powered Coding
-- **Inline Completions** - Context-aware code suggestions
-- **Code Actions** - Intelligent refactoring and fixes
-- **Chat Panel** - Conversational coding assistance
-- **Agent Mode** - Autonomous code generation and modification
-
-### Agent Management
-- **Agent Panel** - View and control active agents
-- **Agent Memory** - Context awareness across sessions
-- **Agent Coordination** - Multi-agent collaboration
-- **Agent Marketplace** - Discover and install agent extensions
-
-### Workflow Integration
-- **Checkpoint Management** - Version control for code states
-- **Git Integration** - Seamless git operations
-- **Terminal Integration** - Execute commands and scripts
-- **Browser Integration** - Web-based workflows
-
-### Advanced Features
-- **MCP Support** - Model Context Protocol integration
-- **Safety Management** - Auto-approval and safety checks
-- **Performance Monitoring** - Real-time metrics
-- **Notification System** - Stay informed of agent actions
-
-### Coordination Dashboard
-- **Real-time Visualization** - See agent coordination in action
-- **Metrics Tracking** - Monitor system health
-- **Workflow Visualization** - Understand agent workflows
-- **Performance Analysis** - Optimize agent execution
-
-## 📦 Installation
-
-1. Open VS Code
-2. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
-3. Search for "Helix"
-4. Click Install
-
-Or install from the command line:
-```bash
-code --install-extension samsara-helix.helix-vscode-extension
-```
+This repository is part of the [Helix Collective](https://github.com/Deathcharge/helix-platform), a comprehensive ecosystem for building intelligent, multi-agent systems with consciousness frameworks and advanced LLM integration.
 
 ## 🚀 Quick Start
 
-1. **Open the Helix Panel** - Click the Helix icon in the sidebar
-2. **Activate Agent Mode** - Enable autonomous coding
-3. **Describe Your Task** - Tell the agent what to build
-4. **Watch It Code** - See real-time code generation
-5. **Review & Approve** - Accept or modify changes
+### Installation
 
-## 🎯 Key Commands
+\`\`\`bash
+git clone https://github.com/Deathcharge/helix-vscode-extension.git
+cd helix-vscode-extension
+pip install -r requirements.txt
+\`\`\`
 
-- `Helix: Activate Agent Mode` - Enable autonomous coding
-- `Helix: Open Agent Panel` - Show agent management UI
-- `Helix: Create Checkpoint` - Save current code state
-- `Helix: Restore Checkpoint` - Revert to saved state
-- `Helix: Open Marketplace` - Browse agent extensions
-- `Helix: Open Coordination Dashboard` - View agent metrics
+### Basic Usage
 
-## 📊 Statistics
-
-- **Lines of Code**: 19,525 (TypeScript)
-- **Components**: 50+ UI components
-- **Features**: 30+ commands
-- **Integrations**: MCP, Git, Browser, Terminal
-
-## 🏗️ Architecture
-
-```
-helix-vscode-extension/
-├── src/
-│   ├── agent/              # Agent mode implementation
-│   ├── browser/            # Browser integration
-│   ├── checkpoint/         # Checkpoint management
-│   ├── commands/           # VS Code commands
-│   ├── configuration/      # Settings management
-│   ├── context/            # Context management
-│   ├── display/            # UI components
-│   ├── marketplace/        # Marketplace integration
-│   ├── mcp/                # MCP support
-│   ├── memory/             # Agent memory
-│   ├── notification/       # Notifications
-│   ├── providers/          # VS Code providers
-│   ├── safety/             # Safety management
-│   ├── services/           # Core services
-│   ├── stores/             # State management
-│   ├── terminal/           # Terminal integration
-│   ├── types/              # TypeScript types
-│   ├── utils/              # Utilities
-│   ├── views/              # Tree views
-│   ├── webviews/           # Web-based UI
-│   ├── extension.ts        # Entry point
-│   └── commands.ts         # Command definitions
-├── media/                  # UI assets
-├── tests/                  # Test suite
-└── package.json            # Extension manifest
-```
-
-## 🔧 Core Modules
-
-### Agent Mode
-Autonomous code generation and modification with safety checks.
-
-### Agent Panel
-Visual interface for managing agents and their capabilities.
-
-### Coordination Dashboard
-Real-time visualization of multi-agent coordination and metrics.
-
-### Marketplace
-Discover, install, and manage agent extensions.
-
-### Checkpoint System
-Save and restore code states for version control.
-
-### Memory System
-Persistent context awareness across sessions.
+See the [examples/](examples/) directory for working examples and integration patterns.
 
 ## 📚 Documentation
 
-- [Getting Started Guide](./docs/getting-started.md)
-- [Agent Mode Guide](./docs/agent-mode.md)
-- [Marketplace Guide](./docs/marketplace.md)
-- [API Reference](./docs/api.md)
-- [Troubleshooting](./docs/troubleshooting.md)
+- **[Architecture](docs/ARCHITECTURE.md)** - System design and components
+- **[API Reference](docs/API.md)** - Complete API documentation
+- **[Integration Guide](docs/INTEGRATION.md)** - How to integrate with other Helix repos
+- **[Deployment](docs/DEPLOYMENT.md)** - Production deployment guide
+- **[Contributing](CONTRIBUTING.md)** - How to contribute
+
+## 🔗 Related Repositories
+
+- **[helix-platform](https://github.com/Deathcharge/helix-platform)** - Central hub and integration guide
+- **[helix-unified](https://github.com/Deathcharge/helix-unified)** - Main unified codebase
+- **[helix-core](https://github.com/Deathcharge/helix-core)** - Core utilities and LLM integration
+
+See [HELIX_REPOSITORY_INDEX.md](https://github.com/Deathcharge/helix-platform/blob/main/HELIX_REPOSITORY_INDEX.md) for the complete ecosystem map.
+
+## 🧪 Testing
+
+Run tests with pytest:
+
+\`\`\`bash
+pytest tests/ -v --cov=src
+\`\`\`
+
+## 🔄 CI/CD
+
+This repository uses GitHub Actions for:
+- ✅ Automated testing (Python 3.9, 3.10, 3.11)
+- ✅ Code linting (flake8)
+- ✅ Type checking (mypy)
+- ✅ Security scanning (bandit, safety)
+- ✅ Coverage reporting (Codecov)
+
+See [.github/workflows/ci.yml](.github/workflows/ci.yml) for details.
+
+## 📋 Requirements
+
+- Python 3.9+
+- Dependencies listed in requirements.txt
+- Development dependencies in requirements-dev.txt
 
 ## 🤝 Contributing
 
-Contributions are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for:
+- Development setup
+- Code style guide
+- Testing requirements
+- Pull request process
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see [LICENSE](./LICENSE) for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙋 Support
+## 🆘 Support
 
-- **Issues**: Report bugs on [GitHub Issues](https://github.com/Deathcharge/helix-vscode-extension/issues)
-- **Discussions**: Join conversations on [GitHub Discussions](https://github.com/Deathcharge/helix-vscode-extension/discussions)
-- **Documentation**: Check the [docs](./docs) directory
+- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/Deathcharge/helix-vscode-extension/issues)
+- **Discussions**: Ask questions in [GitHub Discussions](https://github.com/Deathcharge/helix-vscode-extension/discussions)
+- **Documentation**: See the [docs/](docs/) directory
+- **Ecosystem**: Visit [helix-platform](https://github.com/Deathcharge/helix-platform)
 
 ## 🎓 Learn More
 
-- [Samsara Helix Orchestration](https://github.com/Deathcharge/helix-orchestration)
-- [Helix Narrative Engine](https://github.com/Deathcharge/helix-narrative-engine)
-- [Helix Spirals](https://github.com/Deathcharge/helix-spirals)
-- [Helix Ethics](https://github.com/Deathcharge/helix-ethics)
+- [Helix Collective Repository Index](https://github.com/Deathcharge/helix-platform/blob/main/HELIX_REPOSITORY_INDEX.md)
+- [Architecture Guide](https://github.com/Deathcharge/helix-platform/blob/main/docs/ARCHITECTURE.md)
+- [Integration Examples](https://github.com/Deathcharge/helix-platform/tree/main/examples)
 
 ---
 
-**Built with ❤️ as part of the Samsara Helix Ecosystem**
-
-**Publisher**: Samsara Helix  
-**Repository**: https://github.com/Deathcharge/helix-vscode-extension  
-**License**: Apache 2.0
+**Status**: ✅ Production Ready  
+**Last Updated**: June 19, 2026  
+**Maintainer**: Helix Collective Contributors
